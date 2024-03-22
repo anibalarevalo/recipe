@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "young-Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/YoungSerif-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "outfit";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/Outfit-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "outfit-semibold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("assets/fonts/Outfit-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: "outfit-bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("assets/fonts/Outfit-Bold.ttf");
+  }
+}
+
+:root {
+  @apply bg-eggshell
+}
+
+span {
+  @apply font-outfit-bold
+}
+
+ul, ol {
+  @apply font-outfit
+}
+
+ul li, ol li {
+  @apply mb-2 pl-3
+}
